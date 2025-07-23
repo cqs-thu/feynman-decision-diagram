@@ -1,0 +1,106 @@
+{
+    "mod": 8,
+    "gates" : [
+        {
+            "name": "H1",
+            "new_var": [-1],
+            "coef": 4
+        },
+        {
+            "name": "H2",
+            "new_var": [-2, -1],
+            "coef": 4
+        },
+        {
+            "name": "H3",
+            "new_var": [-2, -2, -1],
+            "coef": 4
+        },
+        {
+            "name": "H32",
+            "new_var": [-2, -1, -2],
+            "coef": 4
+        },
+        {
+            "name": "T",
+            "new_var": [0],
+            "coef": 1
+        },
+        {
+            "name": "S",
+            "new_var": [0],
+            "coef": 2
+        },
+        {
+            "name": "Z",
+            "new_var": [0],
+            "coef": 4
+        },
+        {
+            "name": "CZ",
+            "new_var": [0, 1],
+            "coef": 4
+        },
+        {
+            "name": "CCZ",
+            "new_var": [0, 1, 2],
+            "coef": 4
+        },
+        {
+            "name": "CZ23",
+            "new_var": [-2, 1, 2],
+            "coef": 4
+        },
+        {
+            "name": "CSWAP",
+            "new_var": [0, 2, 1],
+            "coef": 4
+        }
+    ],
+    "complex_gates" : [
+        {
+            "name": "h",
+            "seq": ["H1"]
+        },
+        {
+            "name": "t",
+            "seq": ["T"]
+        },
+        {
+            "name": "s",
+            "seq": ["S"]
+        },
+        {
+            "name": "z",
+            "seq": ["Z"]
+        },
+        {
+            "name": "cz",
+            "seq": ["CZ"]
+        },
+        {
+            "name": "ccz",
+            "seq": ["CCZ"]
+        },
+        {
+            "name": "y",
+            "seq": ["Z", "H1", "Z", "H1"]
+        },
+        {
+            "name": "x",
+            "seq": ["H1", "Z", "H1"]
+        },
+        {
+            "name": "cx",
+            "seq": ["H2", "CZ", "H2"]
+        },
+        {
+            "name": "ccx",
+            "seq": ["H3", "CCZ", "H3"]
+        },
+        {
+            "name": "cswap",
+            "seq": ["H32", "CZ23", "H32", "H3", "CCZ", "H3", "H32", "CZ23", "H32"]
+        }
+    ]
+}

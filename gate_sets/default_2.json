@@ -1,0 +1,65 @@
+{
+    "mod": 2,
+    "gates" : [
+        {
+            "name": "H1",
+            "new_var": [-1],
+            "coef": 1
+        },
+        {
+            "name": "H2",
+            "new_var": [-2, -1],
+            "coef": 1
+        },
+        {
+            "name": "H3",
+            "new_var": [-2, -2, -1],
+            "coef": 1
+        },
+        {
+            "name": "Z",
+            "new_var": [0],
+            "coef": 1
+        },
+        {
+            "name": "CZ",
+            "new_var": [0, 1],
+            "coef": 1
+        },
+        {
+            "name": "CCZ",
+            "new_var": [0, 1, 2],
+            "coef": 1
+        }
+    ],
+    "complex_gates" : [
+        {
+            "name": "h",
+            "seq": ["H1"]
+        },
+        {
+            "name": "z",
+            "seq": ["Z"]
+        },
+        {
+            "name": "cz",
+            "seq": ["CZ"]
+        },
+        {
+            "name": "ccz",
+            "seq": ["CCZ"]
+        },
+        {
+            "name": "x",
+            "seq": ["H1", "Z", "H1"]
+        },
+        {
+            "name": "cx",
+            "seq": ["H2", "CZ", "H2"]
+        },
+        {
+            "name": "ccx",
+            "seq": ["H3", "CCZ", "H3"]
+        }
+    ]
+}

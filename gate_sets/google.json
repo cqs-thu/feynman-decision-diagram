@@ -1,0 +1,100 @@
+{
+    "mod": 8,
+    "gates" : [
+        {
+            "name": "H1",
+            "new_var": [-1],
+            "coef": 4
+        },
+        {
+            "name": "T",
+            "new_var": [0],
+            "coef": 1
+        },
+        {
+            "name": "-T",
+            "new_var": [0],
+            "coef": 7
+        },
+        {
+            "name": "S",
+            "new_var": [0],
+            "coef": 2
+        },
+        {
+            "name": "-S",
+            "new_var": [0],
+            "coef": 6
+        },
+        {
+            "name": "Z",
+            "new_var": [0],
+            "coef": 4
+        },
+        {
+            "name": "CZ",
+            "new_var": [0, 1],
+            "coef": 4
+        },
+        {
+            "name": "ISWAP1",
+            "new_var": [-2, 1],
+            "coef": 2
+        },
+        {
+            "name": "ISWAP2",
+            "new_var": [1, 0],
+            "coef": 4
+        }
+    ],
+    "complex_gates" : [
+        {
+            "name": "h",
+            "seq": ["H1"]
+        },
+        {
+            "name": "cz",
+            "seq": ["CZ"]
+        },
+        {
+            "name": "rx(pi/2)",
+            "seq": ["-S", "H1", "-S"]
+        },
+        {
+            "name": "ry(pi/2)",
+            "seq": ["Z", "H1"]
+        },
+        {
+            "name": "rz(pi/4)",
+            "seq": ["T"]
+        },
+        {
+            "name": "rz(pi/2)",
+            "seq": ["S"]
+        },
+        {
+            "name": "rz(3*pi/4)",
+            "seq": ["T", "S"]
+        },
+        {
+            "name": "rz(-pi/4)",
+            "seq": ["-T"]
+        },
+        {
+            "name": "rz(-pi/2)",
+            "seq": ["-S"]
+        },
+        {
+            "name": "rz(-3*pi/4)",
+            "seq": ["-T", "-S"]
+        },
+        {
+            "name": "t",
+            "seq": ["T"]
+        },
+        {
+            "name": "iswap",
+            "seq": ["ISWAP1", "ISWAP2", "ISWAP1"]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+[submodule "external/adiar"]
+	path = external/adiar
+	url = https://github.com/SSoelvsten/adiar
+[submodule "external/BuDDy"]
+	path = external/BuDDy
+	url = https://github.com/jgcoded/BuDDy
+[submodule "external/sylvan"]
+	path = external/sylvan
+	url = https://github.com/trolando/sylvan
+[submodule "external/cudd"]
+	path = external/cudd
+	url = https://github.com/SSoelvsten/cudd
+[submodule "external/blifparse"]
+	path = external/blifparse
+	url = https://github.com/SSoelvsten/libblifparse
+[submodule "benchmarks/epfl"]
+	path = benchmarks/epfl
+	url = https://github.com/lsils/benchmarks
+[submodule "external/cal"]
+	path = external/cal
+	url = https://github.com/SSoelvsten/cal
+[submodule "external/gtest"]
+	path = external/gtest
+	url = https://github.com/google/googletest.git
